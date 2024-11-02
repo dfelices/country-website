@@ -1,0 +1,366 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN "normalize.fwd.vers2.css")
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lusitana:wght@400;700&display=swap');
+
+body {
+	font-family: "Libre Franklin", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #fefefe;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: "Lusitana", serif;
+    font-size: clamp(1.5rem, 40vh, 3rem);
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: 48em){
+    h1{
+        color: white;
+        text-align: center;
+    }
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 450;
+    width: fit-content;
+    height: auto;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.375rem;
+}
+
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    font-weight: 450;
+    font-size: 1.125rem;
+    display: flex;
+    column-gap: clamp(0.5rem, 2.75vh, 1.75rem);
+}
+
+blockquote{
+    font-size:  clamp(1.125rem, 20vh, 1.125rem);
+    text-align: center;
+    row-gap: 0.5rem;
+}
+
+/* Elements
+--------------------------------------------- */
+video{
+    border-radius: 4px;
+}
+
+img{
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+table{
+    border: 2px solid #dc560f;
+    border-radius: 2px;
+    width: 100%;
+    line-height: 1.6;
+}
+
+@media (min-width: 48em){
+    table{
+        min-width: 40rem;
+    }
+}
+
+
+
+
+/* Links, Inputs, Textareas
+--------------------------------------------- */
+a {
+	text-decoration: none;
+    color: #333333;
+    padding: 0.5rem 0.75rem;
+}
+
+a:visited, a:focus, a:active {
+	color: #333333;
+}
+
+a:hover{
+    transform: scale(1.03);
+    transition: 0.25s;
+}
+
+input{
+    display: block;
+    font-size: 1rem;
+    height: 1.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding-left: 0.5rem;
+}
+
+input:hover, input:focus, input:active {
+    outline: 1px solid #dc560f;
+    border: 1px solid #dc560f;
+    border-radius: 2px;
+}
+
+textarea{
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1rem;
+    height: clamp(4rem, 16vh, 5rem);
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+textarea:hover, textarea:focus, textarea:active {
+    transition: ease 0.25s;
+    outline: 1px solid #dc560f;
+    border: 1px solid #dc560f;
+    border-radius: 2px;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.main-container{
+    position: relative;
+    width: 100%;
+    height: clamp(10rem, 20vh, 20rem);
+    border-radius: 4px;
+}
+
+.site-wrapper{
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+@media (min-width: 48em){
+    .section-wrapper{
+        margin-top: 2rem;
+        row-gap: 1.125rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+/* skip to content css snippet written with the assistance of Microsoft Copilot */
+.skip-to-content{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s; 
+} 
+
+.skip-to-content:focus{
+    top: 0; 
+}
+/* end of code snippet */
+
+@media (min-width: 48em){
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}
+
+.site-header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 48em){
+    .site-header-left{
+        justify-content: start;
+        padding-bottom: 0rem;
+    }
+}
+
+.site-header-left a{
+    padding: 0;
+}
+
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    width: 32px;
+    height: 32px;
+}
+
+.hamburger-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    width: 42px;
+    height: 42px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav-button{
+    border: none;
+    outline: none;
+    background-color: #fefefe;
+    padding: 0;
+}
+
+@media (min-width: 48em){
+    #main-nav-button{
+        display: none;
+    }
+}
+
+#main-nav-button.toggled{
+    color: #fefefe;
+}
+
+#main-nav-list{
+    display: none;
+}
+
+@media (min-width: 48em){
+    #main-nav-list{
+        display: flex;
+        width: fit-content;
+    }
+}
+
+#main-nav-list.toggled{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    padding: 0;
+    row-gap: 1rem; 
+}
+
+.main-nav a:hover, .main-nav a:active, .main-nav a:focus{
+    border-bottom: 2.5px solid #dc560f;
+}
+
+
+/* Main
+--------------------------------------------- */
+
+/* overlay css snippet written with the assistance of Microsoft Copilot*/
+.main-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+/* end of code snippet */
+
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.125rem;
+    padding: 1rem 0;
+}
+
+@media (min-width: 48em){
+    .section-wrapper{
+        padding: 1rem;
+    }
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+/* Footer
+--------------------------------------------- */
+footer{
+    border-top: 2.5px solid #dc560f;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 1rem;
+}

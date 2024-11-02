@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal: About</title>
+    <meta name="description" content="Learn all about the climate, geography, and the beautiful cities of Portugal.">
+    <link rel="icon" href="favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="styles/normalize-fwd-vers2.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/about-styles.css">
+    <script src="scripts/general-scripts.js" defer></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <a href="#main-content" class="skip-to-content">Skip to Content</a>
+        <header class="site-header">
+            <div class="site-header-left">
+                <a href="index.html">
+                    <div class="logo-wrapper">
+                        <img src="media/website-logo.svg" alt="website-logo" id="website-logo">
+                    </div>
+                </a>
+                <div class="hamburger-wrapper">
+                    <button id="main-nav-button"><img src="media/hamburger-material-icon.svg" alt="menu button" id="button-svg"></button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul id="main-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header class="main-header">
+                <div class="main-container">
+                    <img src="media/about.jpg" alt="banner image of Lisbon rooftops">
+                    <div class="overlay">
+                        <h1>About</h1>
+                    </div>
+                </div>
+            </header>
+            <section class="section-wrapper welcome">
+                <div class="content-wrapper">
+                    <div class="text-wrapper">
+                        <h2>Welcome to Portugal!</h2>
+                        <p>Portugal, country lying along the Atlantic coast of the Iberian Peninsula in southwestern Europe. Once continental Europe's greatest power, Portugal shares commonalities—geographic and cultural—with the countries of both northern Europe and the Mediterranean. Its cold, rocky northern coast and mountainous interior are sparsely settled, scenic, and wild, while the country’s south, the Algarve, is warm and fertile. The rugged Estrela Mountains (Serra da Estrela, or “Star Mountain Range”), which lie between the Tagus and Mondego rivers, contain the highest point of mainland Portugal.</p>
+                    </div>
+                    <div class="imgs-wrapper">
+                        <img src="media/welcome.jpg" alt="view of cliff-side overlooking ocean">
+                    </div>
+                </div>
+            </section>
+            <section class="section-wrapper cities">
+                <div class="content-wrapper">
+                    <h2>Cities</h2>
+                    <div class="grid-wrapper">
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/lisbon.jpg" alt="Lisbon touk touk">
+                                <div class="overlay grid">
+                                    <p>Lisbon</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/porto.jpg" alt="Porto bridge at night">
+                                <div class="overlay grid">
+                                    <p>Porto</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/gaia-2.jpg" alt="a row of sailboats in Vila Nova de Gaia">
+                                <div class="overlay grid">
+                                    <p>Vila Nova de Gaia</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/braga.jpg" alt="old church in Braga">
+                                <div class="overlay grid">
+                                    <p>Braga</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/coimbra-2.jpg" alt="beautiful greenway in Coimbra">
+                                <div class="overlay grid">
+                                    <p>Coimbra</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/setúbal.jpg" alt="quaint alleyway in Setúbal">
+                                <div class="overlay grid">
+                                    <p>Setúbal</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/evora.jpg" alt="old ruins in Evora">
+                                <div class="overlay grid">
+                                    <p>Évora</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="anchor-box">
+                            <div class="image-box">
+                                <img src="media/funchal.jpg" alt="outdoor market in Funchal">
+                                <div class="overlay grid">
+                                    <p>Funchal</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-wrapper subscribe">
+                <div class="imgs-wrapper form right">
+                    <div class="image-box library">
+                        <img src="media/library-porto.jpg" alt="library staircase in Porto">
+                    </div>
+                </div>
+                <div class="content-wrapper form">
+                    <h2>Subscribe below for the latest travel recommendations for Portugal!</h2>
+                    <form action="submit">
+                        <div class="form-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name"  placeholder="i.e. Jane">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="i.e. janedoe@email.com">
+                            <div class="terms-box">
+                                <input type="checkbox"
+                                name="terms-conditions" id="terms-conditions" required>
+                                <label for="terms-conditions" class="terms">I agree to the terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" name="submit" value="Submit" class="submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>For Educational Purposes</p>
+            <p>FWDP 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

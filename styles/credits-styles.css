@@ -1,0 +1,56 @@
+@media (min-width: 48rem){
+    main{
+        margin: 0 auto;
+    }
+}
+
+h1{
+    font-size: clamp(1.5rem, 4vh, 2rem);
+    margin-bottom: 1.125rem;
+    color: #333;
+    text-align: center;
+}
+
+.table p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+thead{
+    background-color: #fdd7ab;
+    text-align: center;
+}
+
+caption, th, td{
+    text-align: left;
+    padding: 0.2rem;
+}
+
+caption{
+    font-weight: 400;
+    margin: 1rem 0 0.5rem;
+}
+
+th{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+td{
+    font-size: .875rem;
+    margin: 0;
+}
+
+table a{
+	text-decoration: none;
+    padding: 1rem 1rem 1rem 0;
+}
+
+table a:visited, table a:focus, table a:active {
+	color: #333;
+}
+
+table a:hover{
+    text-decoration: underline;
+}
+

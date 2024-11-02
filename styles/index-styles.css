@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN "normalize.fwd.vers2.css")
+	- Normalize
+	- Box sizing
+	- Media width
+# Base (CALLED IN "general-styles.css")
+	- Typography 
+	- Elements
+	- Links
+# Layouts (CALLED IN "general-styles.css")
+# Components
+	- Header (CALLED IN "general-styles.css")
+	- Main (SOME CALLED IN "general-styles.css"
+	- Footer (CALLED IN "general-styles.css")
+--------------------------------------------------------------*/
+
+/* Main
+--------------------------------------------- */
+.main-container{
+    height: auto;
+}
+
+video{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width:48em){
+    video{
+        display: block;
+    }
+}
+
+h1{
+    border-top: 2.5px solid #dc560f;
+    border-bottom: 2.5px solid #dc560f;
+    text-align: center;
+}
+
+@media (min-width: 48em){
+    h1{
+        border-top: none;
+        border-bottom: none;
+        position: absolute;
+        bottom: clamp(5rem, 14vh, 8rem);
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 48em){
+    blockquote{
+        color: #fefefe;
+        position: absolute;
+        bottom: clamp(1rem, 3vh , 2rem);
+        right: 0;
+        left: 0;
+    }
+}
+
+.section-wrapper{
+    padding: 0;
+}
+
+@media (min-width: 48em){
+    .section-wrapper{
+        border-top: 2.5px solid #dc560f;
+    }
+}
+
+h2{
+    display: none;
+    margin: 0 auto;
+}
+
+@media (min-width: 48em){
+    h2{
+        display: block;
+    }
+}
+
+h3{
+    text-align: center;
+}
+
+.content-wrapper{
+    flex-direction:  column;
+    row-gap: 1rem;
+    padding: 0;
+}
+
+.imgs-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.section-wrapper a{
+    padding: 0;
+    width: 100%;
+}
+
+@media (min-width: 36em){
+    .section-wrapper a{
+        width: 49%;
+    }
+}
+
+.section-wrapper a:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2)
+}
+
+.image-box{
+    border-radius: 4px 4px 0 0;
+    padding: 5rem 4rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    background-image: url(../media/about.jpg);
+}
+
+.visit{
+    background-image: url(../media/visit.jpg);
+
+}
+
+.text-box{
+    padding: 1.075rem 0;
+    background-color: #333;
+    color: #fefefe;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+}

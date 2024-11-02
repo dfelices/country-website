@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal: Home</title>
+    <meta name="description" content="Portugal, a country filled with stunning landscapes, a rich culture, and warm people.">
+    <link rel="icon" href="favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="stylesheet" href="styles/normalize-fwd-vers2.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/index-styles.css">
+    <script src="scripts/general-scripts.js" defer></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <a href="#main-content" class="skip-to-content">Skip to Content</a>
+        <header class="site-header">
+            <div class="site-header-left">
+                <a href="index.html">
+                    <div class="logo-wrapper">
+                        <img src="media/website-logo.svg" alt="website logo" id="website-logo">
+                    </div>
+                </a>
+                <div class="hamburger-wrapper">
+                    <button id="main-nav-button"><img src="media/hamburger-material-icon.svg" alt="menu button" id="button-svg"></button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul id="main-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <header class="main-header">
+                <div class="main-container">
+                    <video autoplay loop muted>
+                        <source src="media/portugal-streets.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="screen-reader-text"> This video shows a short time-lapse of a walk through a cobblestoned alley way in Portugal. It passes by buildings with colourfully painted walls</div>
+                    <h1>Portugal</h1>
+                    <blockquote>
+                        <p>"I followed my heart and it led me to Portugal."</p>
+                        <cite>- unknown</cite>
+                    </blockquote>
+                </div>
+            </header>
+            <section class="section-wrapper">
+                <div class="content-wrapper">
+                    <h2>Explore below</h2>
+                    <div class="imgs-wrapper">
+                        <a href="about.html">
+                            <div class="image-box about" title="background image of Lisbon rooftops"></div>
+                            <div class="text-box">
+                                <p>About</p>
+                            </div>
+                        </a>
+                        <a href="visit.html">
+                            <div class="image-box visit" title="background image of Lisbon restaurant front"></div>
+                            <div class="text-box">
+                                <p>Visit</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>For Educational Purposes</p>
+            <p>FWDP 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

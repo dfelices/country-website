@@ -1,0 +1,210 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN "normalize.fwd.vers2.css")
+	- Normalize
+	- Box sizing
+	- Media width
+# Base (CALLED IN "general-styles.css")
+	- Typography
+	- Elements
+	- Links
+# Layouts (CALLED IN "general-styles.css")
+# Components
+	- Header (CALLED IN "general-styles.css")
+	- Main
+	- Footer (CALLED IN "general-styles.css")
+--------------------------------------------------------------*/
+
+/* Main
+--------------------------------------------- */
+.welcome{
+    margin-top: 2rem;
+    border-radius: 2px;
+    border-top: 2.5px solid #dc560f;
+    border-bottom: 2.5px solid #dc560f;
+    justify-content: center;
+}
+
+.cities{
+    margin-top: 0;
+}
+
+.content-wrapper{
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 1.125rem;
+    width: fit-content;
+}
+
+@media (min-width: 48em){
+    .content-wrapper{
+        padding-top: 0;
+    }
+}
+
+.content-wrapper p{
+    width: 100%;
+}
+
+.content-wrapper img{
+    display: block;
+}
+
+.text-wrapper{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 64em){
+    .text-wrapper{
+        width: 47%;
+    }
+}
+
+.text-wrapper h2{
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 64em){
+    .imgs-wrapper{
+        width: 47%;
+    }
+}
+
+.grid-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.anchor-box{
+    padding: 0
+}
+
+.image-box{
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.image-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid p{
+    font-size: 1.4rem;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+@media (min-width: 36em){
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 1rem;
+    }
+}
+@media (min-width: 48em){
+    .grid-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+@media (min-width: 48em){
+    .subscribe{
+        padding: 2.75rem 1rem 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid #dc560f;
+        border-radius: 4px;
+    }
+}
+
+
+.subscribe h2{
+    height: auto;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 48rem){
+    .form{
+        padding: 1rem;
+        max-width: 40%;
+        max-height: 28rem;
+    }
+
+    .library{
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .library img{
+        max-height: 25rem;
+    }
+
+    .right{
+        justify-content: center;
+    }
+}
+
+form{
+    width: 100%;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    padding: 0;
+    height: auto;
+}
+
+label{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#terms-conditions{
+    width: fit-content;
+    height: auto;
+}
+
+.terms-box{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: fit-content;
+    height: auto;
+}
+
+.terms-box input{
+    margin: 0;  
+    height: auto;
+}
+
+.terms{
+    font-size: 0.875rem;
+}
+
+.submit{
+    margin-top: 2rem;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 2px;
+    border: none;
+}
+
