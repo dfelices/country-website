@@ -22,14 +22,12 @@
 
 /* Typography
 --------------------------------------------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lusitana:wght@400;700&display=swap');
 
 body {
 	font-family: "Libre Franklin", sans-serif;
     font-size: 1rem;
     color: #333333;
-    background-color: #fefefe;
     line-height: 1.5;
 }
 
@@ -49,17 +47,13 @@ h1{
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: "Libre Franklin", sans-serif;
     font-weight: 450;
-    width: fit-content;
-    height: auto;
     margin: 0;
 }
 
 h2{
     font-size: 1.375rem;
 }
-
 
 p{
     margin: 0;
@@ -74,7 +68,7 @@ ul{
 }
 
 blockquote{
-    font-size:  clamp(1.125rem, 20vh, 1.125rem);
+    font-size: clamp(1.125rem, 20vh, 1.125rem);
     text-align: center;
     row-gap: 0.5rem;
 }
@@ -104,12 +98,9 @@ table{
     }
 }
 
-
-
-
 /* Links, Inputs, Textareas
 --------------------------------------------- */
-a {
+a{
 	text-decoration: none;
     color: #333333;
     padding: 0.5rem 0.75rem;

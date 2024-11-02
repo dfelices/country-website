@@ -117,8 +117,6 @@
 }
 
 
-
-
 @media (min-width: 48em){
     .subscribe{
         padding: 2.75rem 1rem 2rem;
@@ -129,7 +127,6 @@
         border-radius: 4px;
     }
 }
-
 
 .subscribe h2{
     height: auto;

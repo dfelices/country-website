@@ -1,3 +1,23 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN "normalize.fwd.vers2.css")
+	- Normalize
+	- Box sizing
+	- Media width
+# Base (CALLED IN "general-styles.css")
+	- Typography
+	- Elements
+	- Links
+# Layouts (CALLED IN "general-styles.css")
+# Components
+	- Header (CALLED IN "general-styles.css")
+	- Main
+	- Footer (CALLED IN "general-styles.css")
+--------------------------------------------------------------*/
+
+/* Main
+--------------------------------------------- */
 @media (min-width: 48rem){
     main{
         margin: 0 auto;
@@ -9,6 +29,16 @@ h1{
     margin-bottom: 1.125rem;
     color: #333;
     text-align: center;
+}
+
+h2{
+    font-size: 1.125rem;
+    font-weight: 450;
+    text-align: center;
+}
+
+.table{
+    width: fit-content;
 }
 
 .table p{

@@ -1,3 +1,23 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN "normalize.fwd.vers2.css")
+	- Normalize
+	- Box sizing
+	- Media width
+# Base (CALLED IN "general-styles.css")
+	- Typography
+	- Elements
+	- Links
+# Layouts (CALLED IN "general-styles.css")
+# Components
+	- Header (CALLED IN "general-styles.css")
+	- Main
+	- Footer (CALLED IN "general-styles.css")
+--------------------------------------------------------------*/
+
+/* Main
+--------------------------------------------- */
 main{
     row-gap: 2rem;
 }
@@ -52,7 +72,6 @@ main{
         max-width: 45%;
     }
 }
-
 
 .imgs-wrapper{
     display: flex;
