@@ -139,12 +139,12 @@
                     <form action="submit">
                         <div class="form-field">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name"  placeholder="i.e. Jane">
+                            <input type="text" name="first-name" id="first-name"  placeholder="i.e. Jane" required aria-required="true">
                             <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="i.e. janedoe@email.com">
+                            <input type="email" name="email" id="email" placeholder="i.e. janedoe@email.com" required aria-required="true">
                             <div class="terms-box">
                                 <input type="checkbox"
-                                name="terms-conditions" id="terms-conditions" required>
+                                name="terms-conditions" id="terms-conditions" required aria-required="true">
                                 <label for="terms-conditions" class="terms">I agree to the terms and conditions</label>
                             </div>
                         </div>
