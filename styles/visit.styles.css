@@ -35,7 +35,7 @@ main{
     }       
 }
 
-@media (min-width: 62em){
+@media (min-width: 64em){
     .section-wrapper{
         flex-direction: row;
         justify-content: space-between;
@@ -67,7 +67,7 @@ main{
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 64em) {
     .content-wrapper:not(.exclude){
         max-width: 45%;
     }

@@ -193,8 +193,7 @@ main{
     position: absolute;
     top: -40px;
     left: 0;
-    background: #000;
-    color: #fff;
+    background-color: #fefefe;
     padding: 8px;
     z-index: 100;
     transition: top 0.3s; 
